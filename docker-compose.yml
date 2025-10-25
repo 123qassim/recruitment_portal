@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  server:
+    build: .
+    ports:
+      - "8002:8001"
+    networks:
+      - recruitment
+    depends_on:
+      - db
+    restart: always
+  ai:
+    build: ./AI-service
+    networks:
+      - recruitment
+    restart: always
+  db:
+    image: mysql:8
+    environment:
+      MYSQL_ROOT_PASSWORD: HUST1037!@#$
+      MYSQL_DATABASE: ai_recruitment
+    ports:
+      - "3307:3306"
+    volumes:
+      - ./data/mysql/conf/my.cnf:/etc/mysql/my.cnf
+      - ./data/mysql/data:/var/lib/mysql
+      - ./data/mysql/log:/var/log
+    networks:
+      - recruitment
+    restart: always
+
+networks:
+  recruitment:
+    driver: bridge
