@@ -1,10 +1,9 @@
-# **AI-Recruitment-backend**
+# **Recruitment-Portal**
 
-[简体中文](./README_zhCN.md)
 
 ## **Project Overview**
 
-**AI-Recruitment-backend** is the backend system for an AI-powered recruitment platform. It allows companies to manage job listings, resumes, and streamline the hiring process with AI-driven candidate analysis and job matching.
+**Recruitment-Portal** is the backend system for an AI-powered recruitment platform. It allows companies to manage job listings, resumes, and streamline the hiring process with AI-driven candidate analysis and job matching.
 
 This backend is built with **Go** and the **Gin** web framework, with **MySQL** as the database, and uses **JWT** for authentication. It integrates with external AI services to analyze resumes and recommend job candidates efficiently.
 
@@ -55,8 +54,8 @@ This backend is built with **Go** and the **Gin** web framework, with **MySQL** 
 ### **1. Clone the repository**
 
 ```bash
-git clone https://github.com/your-repo/AI-Recruitment-backend.git
-cd AI-Recruitment-backend
+git clone https://github.com/your-repo/recruitment_portal.git
+cd recruitment_portal
 ```
 
 ### **2. Install Go dependencies**
