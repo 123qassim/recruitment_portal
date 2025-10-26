@@ -132,6 +132,3 @@ We welcome contributions! If you'd like to contribute:
 4. Push your changes to your fork (`git push origin feature-xyz`).
 5. Open a pull request to the main repository.
 
-## **License**
-
-This project is licensed under the **MIT License**. For more details, see the [LICENSE](LICENSE) file.
